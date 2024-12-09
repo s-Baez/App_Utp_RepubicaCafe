@@ -1,0 +1,221 @@
+.republica-cafe {
+  font-size: 60px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #000000;
+  margin: 10px; /* Espaciado adicional */
+  font-family: "Bebas Neue Bold", serif; /* Fuente personalizada */
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  border-radius: 25px;
+  background-color: #f5f5f5;
+}
+
+.btn-outline-success {
+  border-color: #514633;
+  color: #514633;
+}
+
+.btn-outline-success:hover {
+  background-color: #514633;
+  color: white;
+}
+
+.navbar-brand img {
+  width: 90px;
+  height: 90px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar .form-inline .btn {
+  margin-left: 5px;
+}
+
+.carousel-container {
+  margin-top: 1rem;
+}
+
+.shadow-bottom {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.navbar-nav .nav-link {
+  color: #ab9680;
+  font-size: 20px; /* Color del texto */
+  border: 1px solid #000; /* Borde */
+  border-radius: 20px; /* Bordes redondeados */
+  margin: 0 5px; /* Espaciado entre botones */
+  padding: 10px 20px; /* Espaciado interno */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #fff9e1; /* Fondo al pasar el ratón */
+  color: #514633; /* Color del texto al pasar el ratón */
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 200px;
+  padding: 10px;
+  padding-left: 30px; /* Espacio para el icono */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  border-color: #514633;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.logoimg {
+  margin-right: 10%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Ajusta según sea necesario */
+  font-size: 16px;
+  color: #aaa;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand span {
+    display: in-block;
+    font-size: 40px;
+    font-family: 'JetBrains Mono ExtraBold', cursive !important;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .logoimg {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .logoimg {
+    background-color: #e3d7bf;
+  }
+
+  .logoout {
+    margin: 0px !important;
+  }
+
+  .navbar-brand span {
+    font-size: 30px;
+    color: #000000;
+    line-height: 80px;
+    font-weight: 70;
+    font-family: 'JetBrains Mono NL Medium', cursive !important;
+  }
+
+  .navbar-brand,
+  .form-inline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar a {
+    margin-right: 0%;
+  }
+
+  .navbar-collapse ul {
+    display: grid;
+  }
+
+  .navbar-collapse ul li {
+    margin: 3px;
+  }
+
+  .form-inline {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .d-lg-none .navbar-brand,
+  .d-lg-none .form-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .d-lg-none .navbar-brand img {
+    margin-right: 10px;
+    width: 70px; /* Ajusta el tamaño del logo del carrito en pantallas pequeñas */
+    height: 70px; /* Mantiene la proporción */
+  }
+
+  .d-lg-none {
+    align-items: normal !important;
+  }
+
+  .d-lg-none .form-inline input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 60px; /* Tamaño más pequeño para pantallas pequeñas */
+    height: 60px; /* Mantiene la proporción */
+  }
+
+  .republica-cafe {
+    font-size: 40px; /* Tamaño de fuente más pequeño */
+  }
+
+  .nav-link {
+    font-size: 16px; /* Tamaño de fuente más pequeño para enlaces */
+    padding: 8px 12px; /* Espaciado interno más pequeño */
+  }
+}

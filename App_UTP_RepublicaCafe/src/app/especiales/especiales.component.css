@@ -1,0 +1,33 @@
+.card {
+  border-radius: 10px;
+  overflow: hidden; /* Asegura que el contenido no sobresalga */
+}
+
+.card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: auto; /* Ajusta la altura automáticamente según el ancho */
+  max-height: 200px; /* Establece una altura máxima para mantener uniformidad */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionarla */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Estilo adicional para hacer las tarjetas responsivas */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; /* Espacio entre las tarjetas en pantallas pequeñas */
+  }
+}

@@ -1,0 +1,59 @@
+<header id="page-header">
+  <div class="container">
+    <h1>Carrito</h1>
+  </div>
+</header>
+
+<section class="padded">
+  <div class="container">
+    <!-- Verificar si hay productos en el carrito -->
+    <div *ngIf="listaItemsCarrito.length === 0; else carritoConProductos">
+      <div class="text-center">
+        <!-- Ícono de carrito vacío -->
+        <i class="fas fa-shopping-cart fa-3x"></i>
+        <p>El carrito está vacío.</p>
+      </div>
+    </div>
+
+    <!-- Mostrar la tabla solo si hay productos -->
+    <ng-template #carritoConProductos>
+      <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>Nombre Producto</th>
+          <th>Cantidad</th>
+          <th>Precio Unitario</th>
+          <th>Subtotal</th>
+          <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of listaItemsCarrito; let i = index">
+          <td>{{ item.nombre }}</td>
+          <td>
+            <input
+              type="number"
+              [(ngModel)]="item.cantidad"
+              [disabled]="!item.isEditable"
+              (change)="actualizarCantidad(i)"
+              min="1"
+            />
+          </td>
+          <td>{{ item.precio }}</td>
+          <td>{{ item.precio! * item.cantidad! | currency:'S/. ':'symbol':'1.2-2' }}</td>
+          <td>
+            <!-- Ícono de lápiz para actualizar -->
+            <button class="btn btn-primary" (click)="habilitarEdicion(i)">
+              <i class="fas fa-pencil-alt"></i> <!-- Lápiz -->
+            </button>
+            <!-- Ícono de tacho de basura para eliminar -->
+            <button class="btn btn-danger" (click)="eliminarProducto(i)">
+              <i class="fas fa-trash-alt"></i> <!-- Tacho de basura -->
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </ng-template>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<div class="container mt-2">
+    <h2 class="text-left mb-4 balooc">Especiales</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="baloo">Filtrar por:</h3>
+            <div class="filter-group">
+                <div class="filter">
+                    <label for="sizeFilter" class="baloo">Tamaño</label>
+                    <select id="sizeFilter" class="form-control baloo" (change)="onFilterChange()">
+                        <option value="">Todos</option>
+                        <option value="1 porciones">1 porciones</option>
+                        <option value="4 porciones">4 porciones</option>
+                        <option value="8 porciones">8 porciones</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="priceFilter" class="baloo">Precio</label>
+                    <select id="priceFilter" class="form-control baloo" (change)="onFilterChange()">
+                        <option value="">Todos</option>
+                        <option value="low">Menos de S/ 20.00</option>
+                        <option value="medium">Entre S/ 20.00 y S/ 40.00</option>
+                        <option value="high">Más de S/ 40.00</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4 mb-4" *ngFor="let product of filteredProducts">
+                    <a [routerLink]="['/producto', product.id]" class="text-decoration-none text-reset">
+                        <div class="card">
+                            <img [src]="product.imgSrc" class="card-img-top product-image" [alt]="product.name" />
+                            <div class="card-body">
+                                <h5 class="card-title baloo">{{ product.name }}</h5>
+                                <p class="card-text baloo product-portions">{{ product.portions }}</p>
+                                <p class="card-text text baloo2 product-price">{{ product.price }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

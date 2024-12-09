@@ -1,0 +1,49 @@
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 200px;
+    padding: 10px;
+    padding-left: 30px; /* Espacio para el icono */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s;
+  }
+  
+  .search-input:focus {
+    border-color: #28a745;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px; /* Ajusta según sea necesario */
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+  .product-title {
+    font-family: 'Baloo Chettan', cursive;
+  }
+  
+  .product-description {
+    font-family: 'Baloo Chettan', cursive;
+  }
+  
+  .product-price {
+    font-family: 'Baloo Chettan', cursive;
+  }
+  

@@ -1,0 +1,47 @@
+.balooc {
+    font-family: 'JetBrains Mono Medium', cursive !important;
+}
+.card {
+    border-radius: 10px !important;
+}
+.baloo2 {
+    font-family: 'Baloo 2', cursive !important;
+}
+
+.baloo {
+    font-family: 'Baloo', cursive !important;
+}
+
+.product-portions {
+    color: #4D4747;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #907761 !important;
+}
+
+.price {
+    font-weight: bold;
+    color: #907761 !important;
+}
+.filter-group {
+    background-color: #e3d7bf;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter {
+    margin-bottom: 10px;
+}

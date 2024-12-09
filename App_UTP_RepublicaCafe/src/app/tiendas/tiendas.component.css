@@ -1,0 +1,29 @@
+.container {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.list-group-item {
+    background-color: #efe9db;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.list-group-item h5 {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #8d765b;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #8d765b;
+}

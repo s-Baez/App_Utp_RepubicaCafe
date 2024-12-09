@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;  /* Asegura que todo el documento ocupe toda la altura */
+  margin: 0;     /* Elimina el margen por defecto */
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex: 1;  /* Esto hace que el contenido ocupe el espacio restante */
+}
+
+.footer {
+  background-color: #e3d7bf;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer h5 {
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+
+.footer a {
+  font-family: 'Baloo 2', cursive !important;
+  margin: 0 10px; /* Espaciado uniforme a los lados */
+  font-size: 1rem;
+}
+
+.footer p {
+  font-family: 'Baloo 2', cursive !important;
+  margin: 10px 0; /* Margen para el texto */
+}
+
+.footer a i {
+  margin-right: 5px; /* Espacio reducido entre el icono y el texto */
+  font-size: 1.5rem;
+}
+
+.footer a:hover {
+  color: #735945;
+}
+
+.footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer .img-fluid {
+  max-width: 60%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0; /* Ajusta el padding en pantallas más pequeñas */
+  }
+
+  .footer h5 {
+    font-size: 20px; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  .footer a {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  .footer .img-fluid {
+    max-width: 80%; /* Aumenta el tamaño máximo de la imagen en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer h5 {
+    font-size: 18px; /* Tamaño de fuente aún más pequeño en dispositivos móviles */
+  }
+
+  .footer a {
+    font-size: 0.8rem; /* Tamaño de fuente reducido en dispositivos móviles */
+  }
+}

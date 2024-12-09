@@ -1,0 +1,42 @@
+.container {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Para alinear verticalmente si hay otros elementos */
+  padding: 20px; /* Espaciado interno para evitar que la imagen toque los bordes */
+}
+
+.company-image {
+  width: 40%;
+  max-width: 40%; /* Controla el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsionarse */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .company-image {
+    max-height: 300px; /* Limita la altura máxima en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .company-image {
+    max-height: 250px; /* Ajusta la altura máxima para dispositivos muy pequeños */
+  }
+}

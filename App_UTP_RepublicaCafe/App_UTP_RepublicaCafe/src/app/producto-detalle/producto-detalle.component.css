@@ -1,0 +1,52 @@
+.container {
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #000;
+    font-weight: normal !important;
+}
+.container p {
+    font-weight: 100 !important;
+}
+
+.form-group {
+    margin-top: 15px;
+}
+
+.input-group {
+    max-width: 200px;
+}
+
+.img-fluid {
+    border-radius: 5px;
+}
+
+
+
+.product-detail-container {
+    border: 2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-detail-left {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.product-detail-right {
+    background-color: #efe9db;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info {
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.product-image {
+    border-radius: 15px;
+    max-width: 100%;
+}
